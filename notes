@@ -1,0 +1,50 @@
+
+Git and Github
+    Version control
+
+    GIT
+        Write some code and make some save points
+        save 1, save 2, save 3, etc
+        If you break something in your code you can
+        roll back to the last save point
+
+        Start git-bash terminal
+        cd to needed directory
+        touch - create a file
+        start - enter that file
+
+        git init - create git repository
+        git status - shows files being staged
+            red files are not being tracked
+        git add <filename> - stages the file
+        git commit -m "add a message, what changes did you make?"
+
+        git log - shows what commits you have made and when
+            has a hash to identify a commit
+
+        git add <.> the dot adds all files in the current directory
+
+            Create file in working directory
+            Staging area - files waiting to be saved
+                what do you want git to track?
+            Local Repository - saves a version of what was committed
+                roll back using
+                git checkout <filename>
+        git diff <filename> - shows the difference between the last saved
+            version and the current version
+
+
+    GIT HUB
+        remote repository
+        Create a new repository on github (passwordistoosimple!@)
+            git bash
+                git remote add origin <path to github repository>
+                note "origin" can be any name, but by convention use origin
+
+                Then
+
+                git push -u origin master
+                "-u" links the repositories
+                origin is the name of the remote
+                master is the branch (default main branch of commits)
+
