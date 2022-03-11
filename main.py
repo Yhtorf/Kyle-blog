@@ -10,6 +10,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, RegisterForm, UserLogin, CommentForm
 from flask_gravatar import Gravatar
 from functools import wraps
+import email_validator
 import os
 
 app = Flask(__name__)
