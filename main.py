@@ -10,7 +10,6 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, RegisterForm, UserLogin, CommentForm
 from flask_gravatar import Gravatar
 from functools import wraps
-import email_validator
 import os
 
 app = Flask(__name__)
@@ -228,4 +227,4 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=True)
